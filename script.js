@@ -26,4 +26,21 @@ document.addEventListener("DOMContentLoaded", () => {
   cleanerCta.addEventListener("click", () => {
     try { localStorage.setItem("ddd_intent", "cleaner"); } catch (_) {}
   });
+
+  // Mobile menu toggle.
+  const toggle = document.querySelector(".menu-toggle");
+  const nav = document.getElementById("main-nav");
+  if (toggle && nav) {
+    toggle.addEventListener("click", () => {
+      const open = nav.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    });
+    nav.querySelectorAll("a").forEach((a) =>
+      a.addEventListener("click", () => {
+        nav.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+      })
+    );
+  }
 });

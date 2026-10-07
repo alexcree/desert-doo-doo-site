@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Desert Doo Doo — Pet Waste Cleanup | Coachella Valley</title>
 <meta name="description" content="Desert Doo Doo scoops the poop so you don't have to. Weekly and twice-weekly dog waste cleanup across the Coachella Valley. Background-checked cleaners, photo-documented visits, $20–25 a visit.">
+<link rel="icon" href="logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Special+Elite&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,14 +19,17 @@
       <img src="logo.jpg" alt="Desert Doo Doo logo — a coyote howling at the desert moon" class="brand-mark">
       <span class="brand-name">Desert Doo Doo</span>
     </a>
-    <nav class="nav">
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="main-nav">
       <a href="#how">How it works</a>
       <a href="#pricing">Pricing</a>
       <a href="#trust">Why us</a>
       <a href="#cleaners">Cleaners</a>
       <a href="#faq">FAQ</a>
     </nav>
-    <a href="#book" class="btn btn-sun">Book a cleanup</a>
+    <a href="#book" class="btn btn-sun header-cta">Book a cleanup</a>
   </div>
 </header>
 
@@ -32,43 +39,46 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div class="hero-copy">
-        <p class="kicker">Coachella Valley &middot; Residential</p>
+        <p class="kicker stamp">Coachella Valley &middot; Residential</p>
         <h1>We scoop the poop.<br>You enjoy the yard.</h1>
         <p class="lede">Weekly and twice-weekly dog waste cleanup with a deodorizing treatment, photo-documented every visit. From <strong>$20 a visit</strong> — cancel anytime.</p>
         <div class="hero-ctas">
           <a href="#book" class="btn btn-sun btn-lg">Book your first cleanup</a>
-          <a href="#pricing" class="btn btn-ghost btn-lg">See pricing</a>
+          <a href="#pricing" class="btn btn-outline btn-lg">See pricing</a>
         </div>
         <ul class="hero-points">
-          <li>Insured, background-checked cleaners</li>
-          <li>Photos + GPS on every visit</li>
-          <li>Free re-clean within 24 hours if we miss a spot</li>
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="7.2" cy="9.5" r="2.1"/><circle cx="12" cy="7" r="2.1"/><circle cx="16.8" cy="9.5" r="2.1"/><path d="M12 11.5c-2.9 0-5.3 2.5-5.3 5 0 1.6 1.2 2.7 2.8 2.7.9 0 1.7-.4 2.5-.4s1.6.4 2.5.4c1.6 0 2.8-1.1 2.8-2.7 0-2.5-2.4-5-5.3-5z"/></svg>Insured, background-checked cleaners</li>
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="7.2" cy="9.5" r="2.1"/><circle cx="12" cy="7" r="2.1"/><circle cx="16.8" cy="9.5" r="2.1"/><path d="M12 11.5c-2.9 0-5.3 2.5-5.3 5 0 1.6 1.2 2.7 2.8 2.7.9 0 1.7-.4 2.5-.4s1.6.4 2.5.4c1.6 0 2.8-1.1 2.8-2.7 0-2.5-2.4-5-5.3-5z"/></svg>Photos + GPS on every visit</li>
+          <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="7.2" cy="9.5" r="2.1"/><circle cx="12" cy="7" r="2.1"/><circle cx="16.8" cy="9.5" r="2.1"/><path d="M12 11.5c-2.9 0-5.3 2.5-5.3 5 0 1.6 1.2 2.7 2.8 2.7.9 0 1.7-.4 2.5-.4s1.6.4 2.5.4c1.6 0 2.8-1.1 2.8-2.7 0-2.5-2.4-5-5.3-5z"/></svg>Free re-clean within 24 hours if we miss a spot</li>
         </ul>
       </div>
       <div class="hero-art">
-        <img src="logo.jpg" alt="Desert Doo Doo — Pet Waste Cleanup badge" class="hero-logo">
+        <div class="sunburst" aria-hidden="true"></div>
+        <img src="logo.jpg" alt="Desert Doo Doo — Pet Waste Cleanup badge: a coyote howling at the desert sun" class="hero-logo">
       </div>
     </div>
   </section>
 
+  <div class="divider" aria-hidden="true"><span class="divider-sun"></span></div>
+
   <!-- HOW IT WORKS -->
   <section id="how" class="section">
     <div class="wrap">
-      <p class="kicker">How it works</p>
+      <p class="kicker stamp">How it works</p>
       <h2>Three steps. Zero poop.</h2>
-      <div class="cards-3">
-        <div class="card">
-          <div class="card-num">1</div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
           <h3>Book in a text</h3>
           <p>Pick weekly or twice-weekly online, or just text our concierge — it grabs your yard details, dog count, and schedule in under two minutes.</p>
         </div>
-        <div class="card">
-          <div class="card-num">2</div>
+        <div class="step">
+          <div class="step-num">2</div>
           <h3>We clean</h3>
           <p>A background-checked cleaner scoops the yard and applies a deodorizing treatment. Waste goes in your bin. Every visit is photo- and GPS-documented.</p>
         </div>
-        <div class="card">
-          <div class="card-num">3</div>
+        <div class="step">
+          <div class="step-num">3</div>
           <h3>You relax</h3>
           <p>Get the visit report with photos. Not happy with a spot? We come back and re-clean free within 24 hours. Cancel anytime.</p>
         </div>
@@ -79,17 +89,17 @@
   <!-- PRICING -->
   <section id="pricing" class="section section-dusk">
     <div class="wrap">
-      <p class="kicker">Pricing</p>
+      <p class="kicker stamp stamp-light">Pricing</p>
       <h2>Simple pricing, no surprises</h2>
       <div class="cards-3">
         <div class="card price-card">
           <h3>Weekly</h3>
           <p class="price">$20–25<span class="per">/visit</span></p>
           <ul>
-            <li>Pickup + deodorizing treatment</li>
-            <li>Photo + GPS documentation</li>
-            <li>Up to 2 dogs included</li>
-            <li>Cancel anytime</li>
+            <li><svg class="icon icon-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Pickup + deodorizing treatment</li>
+            <li><svg class="icon icon-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Photo + GPS documentation</li>
+            <li><svg class="icon icon-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Up to 2 dogs included</li>
+            <li><svg class="icon icon-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Cancel anytime</li>
           </ul>
           <a href="#book" class="btn btn-sun">Choose weekly</a>
         </div>
@@ -97,23 +107,23 @@
           <p class="flag">Most thorough</p>
           <h3>Twice-weekly</h3>
           <p class="price">$20–25<span class="per">/visit</span></p>
-          <p class="fine">Small per-visit discount vs weekly</p>
+          <p class="fine">Discounted per visit vs. weekly — final rate set at signup</p>
           <ul>
-            <li>Everything in Weekly</li>
-            <li>Yard never gets ahead of you</li>
-            <li>Best for multi-dog homes</li>
-            <li>Cancel anytime</li>
+            <li><svg class="icon icon-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Everything in Weekly</li>
+            <li><svg class="icon icon-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Yard never gets ahead of you</li>
+            <li><svg class="icon icon-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Best for multi-dog homes</li>
+            <li><svg class="icon icon-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Cancel anytime</li>
           </ul>
           <a href="#book" class="btn btn-sun">Choose twice-weekly</a>
         </div>
         <div class="card price-card">
           <h3>One-off</h3>
-          <p class="price">Custom<span class="per">/visit</span></p>
+          <p class="price">Quoted<span class="per"> upfront</span></p>
           <ul>
-            <li>Single cleanup, no commitment</li>
-            <li>Great way to try us out</li>
-            <li>Priced above subscription</li>
-            <li>Same photo documentation</li>
+            <li><svg class="icon icon-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Single cleanup, no commitment</li>
+            <li><svg class="icon icon-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Great way to try us out</li>
+            <li><svg class="icon icon-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Priced above subscription</li>
+            <li><svg class="icon icon-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Same photo documentation</li>
           </ul>
           <a href="#book" class="btn btn-sun">Book a one-off</a>
         </div>
@@ -125,18 +135,22 @@
   <!-- TRUST -->
   <section id="trust" class="section">
     <div class="wrap">
-      <p class="kicker">Why Desert Doo Doo</p>
+      <p class="kicker stamp">Why Desert Doo Doo</p>
       <h2>Built on trust, backed by proof</h2>
-      <div class="cards-3">
-        <div class="card">
+      <p class="lede trust-lede">Strangers in your yard is a big ask. So we built the whole operation around proof — vetted people, insured visits, and a photo record of every single cleanup.</p>
+      <div class="trust-grid">
+        <div class="trust-item">
+          <svg class="trust-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3.4 8.1-7 10-3.6-1.9-7-5-7-10V6l7-3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <h3>Vetted cleaners</h3>
           <p>Every cleaner passes a background check and trains in person — including shadowing a real visit — before touching your yard solo.</p>
         </div>
-        <div class="card">
+        <div class="trust-item">
+          <svg class="trust-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3.4 8.1-7 10-3.6-1.9-7-5-7-10V6l7-3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="12" cy="11" r="2.4" fill="none" stroke="currentColor" stroke-width="2"/></svg>
           <h3>Insured every visit</h3>
           <p>DDD carries insurance on every single cleanup. If anything goes wrong, you're covered. Dogs stay secured indoors by default.</p>
         </div>
-        <div class="card">
+        <div class="trust-item">
+          <svg class="trust-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="13" r="3.4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 7l1.5-2.5h3L15 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
           <h3>Photo proof</h3>
           <p>Time- and GPS-stamped photos document every visit. You see the work; we audit the quality. Ratings keep everyone honest.</p>
         </div>
@@ -155,21 +169,21 @@
   <section id="book" class="section section-dusk">
     <div class="wrap book-grid">
       <div>
-        <p class="kicker">Book now</p>
+        <p class="kicker stamp stamp-light">Book now</p>
         <h2>Get your yard back</h2>
         <p class="lede">Tell us about your pups and your yard. Our concierge texts you back to lock in your first visit — usually same week.</p>
-        <ul class="hero-points">
-          <li>No contracts — cancel anytime, effective immediately</li>
-          <li>You set time-of-day preferences (narrow windows may take a little longer to schedule)</li>
-          <li>Serving homes across the Coachella Valley</li>
+        <ul class="book-points">
+          <li><svg class="icon icon-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>No contracts — cancel anytime, effective immediately</li>
+          <li><svg class="icon icon-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>You set time-of-day preferences (narrow windows may take a little longer to schedule)</li>
+          <li><svg class="icon icon-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 13l4 4L19 7" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>Serving homes across the Coachella Valley</li>
         </ul>
       </div>
       <form id="book-form" class="book-form" novalidate>
         <label>Your name
-          <input type="text" name="name" required placeholder="Jane Doe">
+          <input type="text" name="name" required placeholder="Jane Doe" autocomplete="name">
         </label>
         <label>Mobile number
-          <input type="tel" name="phone" required placeholder="(760) 555-0123">
+          <input type="tel" name="phone" required placeholder="(760) 555-0123" autocomplete="tel">
         </label>
         <label>City
           <select name="city" required>
@@ -204,7 +218,7 @@
           </select>
         </label>
         <button type="submit" class="btn btn-sun btn-lg">Request my cleanup</button>
-        <p id="book-confirm" class="book-confirm" hidden>Thanks! Our concierge will text you shortly to confirm your first visit. 🐾</p>
+        <p id="book-confirm" class="book-confirm" hidden>Thanks! Our concierge will text you shortly to confirm your first visit.</p>
       </form>
     </div>
   </section>
@@ -212,7 +226,7 @@
   <!-- CLEANERS -->
   <section id="cleaners" class="section">
     <div class="wrap">
-      <p class="kicker">For cleaners</p>
+      <p class="kicker stamp">For cleaners</p>
       <h2>Get paid to be outside</h2>
       <p class="lede">Desert Doo Doo is hiring young locals across the Coachella Valley. Make your own schedule, claim jobs off the open board, get paid weekly.</p>
       <div class="cards-3">
@@ -229,14 +243,14 @@
           <p>In-person training plus shadowing a real visit before you go solo. Supplies reimbursed.</p>
         </div>
       </div>
-      <p class="center"><a href="#book" class="btn btn-ghost" id="cleaner-cta">Apply to clean</a></p>
+      <p class="center"><a href="#book" class="btn btn-outline" id="cleaner-cta">Apply to clean</a></p>
     </div>
   </section>
 
   <!-- FAQ -->
   <section id="faq" class="section section-dusk">
     <div class="wrap faq-wrap">
-      <p class="kicker">FAQ</p>
+      <p class="kicker stamp stamp-light">FAQ</p>
       <h2>Good questions</h2>
       <details>
         <summary>Do I need to be home?</summary>
@@ -256,11 +270,11 @@
       </details>
       <details>
         <summary>What if I'm not happy with a visit?</summary>
-        <p>Send us the photos and we'll adjudicate — if we missed a spot, we re-clean free within 24 hours.</p>
+        <p>Send us the photos and we'll take a look — if we missed a spot, we re-clean free within 24 hours.</p>
       </details>
       <details>
         <summary>How do I cancel?</summary>
-        <p>Anytime, effective immediately. Text the concierge or hit cancel in your account — no phone maze, no retention script.</p>
+        <p>Anytime, effective immediately. Text the concierge — no phone maze, no retention script.</p>
       </details>
     </div>
   </section>
@@ -276,7 +290,8 @@
         <p class="footer-tag">Pet Waste Cleanup &middot; Coachella Valley, CA</p>
       </div>
     </div>
-    <p class="footer-note">Launching spring 2027. Residential service only.</p>
+    <p class="footer-cities">Palm Desert &middot; Palm Springs &middot; La Quinta &middot; Indio &middot; Rancho Mirage &middot; Cathedral City &middot; Desert Hot Springs &middot; Coachella &middot; Indian Wells</p>
+    <p class="footer-note">Launching spring 2027. Residential service only.<br>Text-first concierge — request a cleanup above and we'll text you back.</p>
   </div>
 </footer>
 
